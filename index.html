@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Fund Me App</title>
-  </head>
+<html lang="en">
 
-  <body>
-    <button id="connectButton">Connect</button>
-    <button id="balanceButton">getBalance</button>
-    <button id="withdrawButton">Withdraw</button>
-    <!-- <form> -->
-    <label for="ethAmount">ETH Amount</label>
-    <input id="ethAmount" placeholder="0.1" type="number"/>
-    <button type="button" id="fundButton" > Fund </button>
-    <!-- </form> -->
-  </body>
+<head>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <h1>Fundme-Front</h1>
+</head>
 
-  <script src="./index.js" type="module"></script>
+<body>
+  <button id="connectButton">Connect</button>
+  <button id="balanceButton">getBalance</button>
+  <button id="withdrawButton">Withdraw</button>
+  <div id="addressDisplay"></div>
+  <br>
+  <div id="balanceDisplay"></div>
+
+  <br>
+  <!-- <form> -->
+  <label for="ethAmount">ETH Amount</label>
+  <input id="ethAmount" placeholder="0.1" type="number" />
+  <button type="button" id="fundButton"> Fund </button>
+  <br><br>
+  <label for="refundingAddress">Refunding Address</label>
+  <input id="refundingAddress" placeholder="0x..." type="string" />
+  <button type="button" id="refundButton"> Refund </button>
+  <!-- </form> -->
+  <div id="eventLog"></div>
+
+</body>
+
+<script src="./index.js" type="module"></script>
+
 </html>
